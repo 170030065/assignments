@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+function sub(){
+    var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;   
+}
+function mul(){
+    var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a * b;
+document.getElementById("answer").value= c;   
+}
+function div(){
+    var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a / b;
+document.getElementById("answer").value= c;   
+}
+</script>
+</head>
+<body>
+Enter the First number : <input id="first"><br><br>
+Enter the Second number: <input id="second"><br><br>
+<button class="btn btn-primary" onclick="add()">Add</button>	&nbsp;	&nbsp;	&nbsp;
+<button class="btn btn-secondary" onclick="sub()">SUB</button>	&nbsp;	&nbsp;	&nbsp;
+<button class="btn btn-danger" onclick="mul()">Mul</button>	&nbsp;	&nbsp;	&nbsp;
+<button class="btn btn-dark" onclick="div()">Div</button><br><br>
+Result:
+<input id="answer">
+</body>
+</html>
